@@ -75,7 +75,7 @@ class Subscriptions extends Component {
                         onChange={this.onChangeInput}/>
                     </form>
                     <div className={this.state.error ? "error show" : "error"}>Double check that email</div>
-                    <div className={this.state.success ? "success show" : "success"}>Thankyou</div>
+                    <div className={this.state.success ? "success show" : "success"}>Thank you!!</div>
                 </div>
                 <small>
                     Lorem ipsum dolor banana fanafa farafa
