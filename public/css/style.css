@@ -158,6 +158,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
+
 }
 
 .home_block .item {
@@ -165,18 +166,25 @@ footer {
     position: relative;
     height: 270px;
     overflow: hidden;
+    border:1px solid
 }
 
-.home_block .item.lg  {
+.home_block .item.lg {
     width:50%;
+    animation-delay: 200ms !important;
+
 }
 
-.home_block .item.md  {
+.home_block .item.md {
     width:30%;
+    animation-delay: 500ms !important;
+
 }
 
-.home_block .item.sm  {
+.home_block .item.sm {
     width:20%;
+    animation-delay: 800ms !important;
+
 }
 
 .home_block .item .image{
@@ -187,27 +195,20 @@ footer {
 
 .home_block .item .title {
     background: black;
+    max-height:50px;
+    min-height:49px;
     padding: 10px;
     transition: all 500ms ease-in-out;
+
 }
 
 .home_block .item:hover .title {
-    transform: translate(0px, -39px);
+    transform: translate(0px, -49px);
     transition: all 500ms ease-in-out;
 }
 
 .home_block .item .title a {
     color:#fff;
-}
-
-.home_block .item.lg {
-  -webkit-animation-delay: 200ms;
-}
-.home_block .item.md {
-  -webkit-animation-delay: 500ms;
-}
-.home_block .item.sm {
-  -webkit-animation-delay: 800ms;
 }
 
 .home_block .item .veil {
@@ -223,4 +224,175 @@ footer {
 .home_block .item:hover .veil {
     opacity:0;
     transition: all 500ms ease-in-out;
+}
+
+/*===================================
+                POLL
+===================================*/
+
+.home_poll {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.poll_container {
+    display: -ms-flex;
+	display: -webkit-flex;
+    display: flex;
+
+}
+.poll_container .poll_item{
+    padding:20px;
+    flex-grow: 1;
+}
+
+.poll_container .poll_item img{
+    width: 80%;
+}
+.poll_container .poll_item div {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+}
+
+/*===================================
+                TEAMS
+===================================*/
+
+
+.teams_component {
+    min-height: 800px;
+}
+
+.teams_input {
+    text-align: center;
+    padding: 20px 0px;
+    background: #ae1a1a;
+}
+
+.teams_input input {
+    font-family: Roboto;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.teams_input  input:focus{
+    outline: none;
+}
+
+
+.teams_container span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.teams_container .team_item{
+    width:25%;
+    padding:30px;
+    box-sizing: border-box;
+}
+.teams_container .team_item img {
+    width:100%;
+
+}
+
+
+/*===================================
+                TEAM
+===================================*/
+
+.team_data_wrapper {
+    display: flex;
+}
+
+.team_data_wrapper .left {
+    box-sizing: border-box;
+    padding:10px 20px;
+}
+
+.team_data_wrapper .right {
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-left: 1px solid #b9b9b9;
+    padding: 0px 20px;
+}
+
+.team_data_wrapper .left img {
+    width: 150px;
+}
+
+
+.team_data_wrapper h1{
+    color: #6d6d6d;
+}
+
+
+.team_data_wrapper .squad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.team_data_wrapper .squad .item {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.team_data_wrapper .squad h4 {
+    text-align: center;
+    color: #006bb6;
+}
+
+
+.team_data_wrapper .squad .item img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+.team_data_wrapper .squad .item .node{
+    font-size: 14px;
+    padding: 4px 0px;
+}
+.team_data_wrapper .squad .item .node span{
+    font-weight: 600;
+}
+
+/*=======================================
+                FADE
+========================================*/
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
